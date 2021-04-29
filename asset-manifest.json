@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/chatbot-using-react/static/css/main.68dd9dd9.chunk.css",
+    "main.js": "/chatbot-using-react/static/js/main.8aa15c0c.chunk.js",
+    "main.js.map": "/chatbot-using-react/static/js/main.8aa15c0c.chunk.js.map",
+    "runtime-main.js": "/chatbot-using-react/static/js/runtime-main.f407e620.js",
+    "runtime-main.js.map": "/chatbot-using-react/static/js/runtime-main.f407e620.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/chatbot-using-react/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.9708c1bc.chunk.js": "/chatbot-using-react/static/js/2.9708c1bc.chunk.js",
+    "static/js/2.9708c1bc.chunk.js.map": "/chatbot-using-react/static/js/2.9708c1bc.chunk.js.map",
+    "index.html": "/chatbot-using-react/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/chatbot-using-react/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.68dd9dd9.chunk.css.map": "/chatbot-using-react/static/css/main.68dd9dd9.chunk.css.map",
+    "static/js/2.9708c1bc.chunk.js.LICENSE.txt": "/chatbot-using-react/static/js/2.9708c1bc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f407e620.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.9708c1bc.chunk.js",
+    "static/css/main.68dd9dd9.chunk.css",
+    "static/js/main.8aa15c0c.chunk.js"
+  ]
+}
