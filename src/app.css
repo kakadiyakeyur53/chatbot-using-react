@@ -1,0 +1,24 @@
+/*
+basic css propery for change height ,width, color and other styling
+if you want to change view of chatbot than you can override class css as per your requirement
+*/
+
+#root{
+    background-color:aliceblue;
+    height: 100%;
+}
+
+.react-chatbot-kit-chat-container{
+    width:100% ;
+    height:auto;
+}
+
+.react-chatbot-kit-chat-message-container{
+    height: 600px;
+}
+.react-chatbot-kit-chat-bot-message{
+    margin-left: 0px;
+}
+.react-chatbot-kit-chat-input-container{
+    position:relative;
+}
