@@ -2,6 +2,8 @@
 
 This project is use react-chatbot-kit for chatbot so you have to install it on your project.
 
+[Live Demo](https://kakadiyakeyur53.github.io/chatbot-using-react/)
+
 ## npm requirements
 
 ### `npm bootstrap`
@@ -81,7 +83,7 @@ scrollIntoView - helper function to scroll content into view when doing asynchro
 ## Example
 
 here i create different widget to give overview of different properties of chatbot.
-### 1. [Simple Message]()
+### 1. [Simple Message](https://github.com/kakadiyakeyur53)
 
 return simple chatbot message with text.
 
@@ -110,4 +112,6 @@ display buttons, on click use property action provider which is given to widget 
 use of API
 
 fetch data using API and use in widget, live display by statechange
+
+[Live Demo](https://kakadiyakeyur53.github.io/chatbot-using-react/)
 
