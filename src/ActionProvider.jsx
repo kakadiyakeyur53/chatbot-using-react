@@ -42,7 +42,7 @@ class ActionProvider {
   //for weather widget, API testing and fetch data return current weather info of city using API
   WeatherInfoHandle = () => {
     const message = this.createChatBotMessage(
-      `we provides this much features`,
+      `enter your city name to know weather if your city`,
       {
         withAvatar: true,
         widget: "WeatherInfo",
@@ -86,6 +86,7 @@ class ActionProvider {
   handleDefault = () => {
     const message = this.createChatBotMessage("How can I help?", {
       withAvatar: true,
+      widget: "Tools",
     });
     this.addMessageToBotState(message);
   };

@@ -29,6 +29,11 @@ function App() {
             3. want to know about software development type software development
           </h4>
         </div>
+        <div className="container">
+          <h4>
+            4. want to know about weather of your city and other cities type weather
+          </h4>
+        </div>
         <div className="App mx-auto col-md-6 col-sm-8 col-lg-4 cpl-xl-3 my-5">
           <Chatbot
             config={Config}

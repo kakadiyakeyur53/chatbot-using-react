@@ -10,6 +10,7 @@ const Tools = (props) => {
       <ul>
         <li>
           <Button
+            className="my-1"
             variant="outlined"
             color="primary"
             onClick={props.actionProvider.EnrollmentNumber}
@@ -19,6 +20,7 @@ const Tools = (props) => {
         </li>
         <li>
           <Button
+            className="my-1"
             variant="outlined"
             color="primary"
             onClick={props.actionProvider.SoftwareHandler}
@@ -28,6 +30,7 @@ const Tools = (props) => {
         </li>
         <li>
           <Button
+            className="my-1"
             variant="outlined"
             color="primary"
             onClick={props.actionProvider.WebHandler}
@@ -37,6 +40,7 @@ const Tools = (props) => {
         </li>
         <li>
           <Button
+            className="my-1"
             variant="outlined"
             color="primary"
             onClick={props.actionProvider.WeatherInfoHandle}

@@ -44,9 +44,8 @@ class MessageParser {
       lowerCase.includes("info about weather") ||
       lowerCase.includes("about weather") ||
       lowerCase.includes("weather of city") ||
-      lowerCase.includes("information of weather")||
+      lowerCase.includes("information of weather") ||
       lowerCase.includes("mosam")
-
     ) {
       return this.actionProvider.WeatherInfoHandle();
     }
@@ -72,9 +71,8 @@ class MessageParser {
       lowerCase.includes("web app") ||
       lowerCase.includes("web application") ||
       lowerCase.includes("webdevelopment") ||
-      lowerCase.includes("web development")||
+      lowerCase.includes("web development") ||
       lowerCase.includes("websites")
-
     ) {
       return this.actionProvider.WebHandler();
     }
