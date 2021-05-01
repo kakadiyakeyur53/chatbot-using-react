@@ -1,7 +1,6 @@
 import React from "react";
 
-
-//defination  of WebDevelopment widget 
+//defination  of WebDevelopment widget
 //all the mathod define in actionprovider and all states of widget are passed in props
 //you can use all fuunction and state with the help of props
 const WebDevelopment = (props) => {

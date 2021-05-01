@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 
-//defination  of EnrollmentNo widget 
+//defination  of EnrollmentNo widget
 //all the mathod define in actionprovider and all states of widget are passed in props
 //you can use all fuunction and state with the help of props
 const EnrollmentNo = (props) => {
@@ -26,7 +26,7 @@ const EnrollmentNo = (props) => {
     props.actionProvider.addMessageToBotState(message);
   };
 
-  const   EnrollmentFormValidation = (field) =>{
+  const EnrollmentFormValidation = (field) => {
     const message = props.actionProvider.createChatBotMessage(
       `enter ${field} for create enrollment number`,
       {
@@ -34,35 +34,38 @@ const EnrollmentNo = (props) => {
       }
     );
     props.actionProvider.addMessageToBotState(message);
-  }
+  };
 
   const onsubmit = (event) => {
     event.preventDefault();
-    console.log(state.name)
-    
-    if(state.name===""){
+    console.log(state.name);
+
+    if (state.name === "") {
       EnrollmentFormValidation("name");
-    }else{
-      if(state.year===""){
+    } else {
+      if (state.year === "") {
         EnrollmentFormValidation("year");
-      }else{
-        if(state.collagecode===""){
+      } else {
+        if (state.collagecode === "") {
           EnrollmentFormValidation("collage code");
-        }else{
-          if(state.shift===""){
-            state.shift="01";
+        } else {
+          if (state.shift === "") {
+            state.shift = "01";
           }
-            if(state.branch===""){
-              EnrollmentFormValidation("branch");
-            }else{
-              if(state.rollno===""){
-                EnrollmentFormValidation("rollno");
-              }else{
-    const info = state;
-    //calling mathod define in actionprovider
-    EnrollSubmit(info);
+          if (state.branch === "") {
+            EnrollmentFormValidation("branch");
+          } else {
+            if (state.rollno === "") {
+              EnrollmentFormValidation("rollno");
+            } else {
+              const info = state;
+              //calling mathod define in actionprovider
+              EnrollSubmit(info);
+            }
+          }
+        }
+      }
     }
-  }}}}
   };
 
   const onchangeevent = (event) => {
@@ -129,7 +132,12 @@ const EnrollmentNo = (props) => {
           onChange={onchangeevent}
         />
         <br />
-        <Button variant="outlined" color="primary" className="btn btn-primary my-3" onClick={onsubmit}>
+        <Button
+          variant="outlined"
+          color="primary"
+          className="btn btn-primary my-3"
+          onClick={onsubmit}
+        >
           submit
         </Button>
       </form>

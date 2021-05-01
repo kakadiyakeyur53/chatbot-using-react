@@ -17,12 +17,27 @@ const config = {
       backgroundColor: "#5ccc9d",
     },
   },
-  initialMessages: [
-    createChatBotMessage(`hii, i am ${botName}.`),
-  ],
+  initialMessages: [createChatBotMessage(`hii, i am ${botName}.`)],
   state: {
-    WebDevelopmentState: ["HTML","CSS","JAVASCRIPT","BOOTSTRAP","JQUERY & AJAX","SASS","REACT","REDUX","NODEJS","EXPRESS","MONGODB & MONGOOSE"],
-    ToolsState: ["enrollment number","web development","software development","whether info"],
+    WebDevelopmentState: [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "BOOTSTRAP",
+      "JQUERY & AJAX",
+      "SASS",
+      "REACT",
+      "REDUX",
+      "NODEJS",
+      "EXPRESS",
+      "MONGODB & MONGOOSE",
+    ],
+    ToolsState: [
+      "enrollment number",
+      "web development",
+      "software development",
+      "whether info",
+    ],
   },
   //widgets declaration section which we use in our bot for display information
   widgets: [
