@@ -6,6 +6,12 @@ This project is use react-chatbot-kit for chatbot so you have to install it on y
 
 ## npm requirements
 
+### `npm react-chatbot-kit`
+
+using this feature you can add your chatbot in your project 
+
+[npm react-chatbot-kit](https://www.npmjs.com/package/react-chatbot-kit)
+
 ### `npm bootstrap`
 
 you can use bootstrap in your project for styling your page.
