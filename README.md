@@ -4,8 +4,6 @@ This project is use react-chatbot-kit for chatbot so you have to install it on y
 
 ## npm requirements
 
-In the project directory, you can run:
-
 ### `npm bootstrap`
 
 you can use bootstrap in your project for styling your page.
@@ -16,28 +14,100 @@ for easy guide go to [npm bootstrap](https://www.npmjs.com/package/bootstrap)
 you can use material ui for easy documentation and effective representation
 for easy guide go to [npm material-ui core](https://www.npmjs.com/package/@material-ui/core).
 
+### `npm jquery`
 
+you can use jquery for solve inbuilde jquery
+for easy guide go to [npm jquery](https://www.npmjs.com/package/jquery).
 
-### Code Splitting
+## coding section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### [Config](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/Config.jsx)
+this section is use for initialize chatbot configurations
 
-### Analyzing the Bundle Size
+<b>Properties:</b>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<b>botName - </b>defines the name of the bot
 
-### Making a Progressive Web App
+<b>customStyles -</b> object defining custom styles for different elements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<b>initialMessages -</b> defines an array of initial messages from the bot. Required property.
 
-### Advanced Configuration
+<b>state -</b> defines state you want to place into the chatbot component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<b>customComponents -</b> you can define your own components and swap out the components that come with react-chatbot-kit by replacing them here.
 
-### Deployment
+<b>widgets -</b> here you can define a list of widgets that you want to be able to render with a chatbot response.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### [Message Parser](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/MessageParser.jsx)
 
-### `npm run build` fails to minify
+The message parser controls what happens when the user sends a message.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You have to implement this yourself. The beauty of this is that you can make the message parsing as complex or as simple as you'd like.
+
+The only method that the message parser needs to implement is the "parse" method. This method is called inside the chatbot when it receives a message from the user.
+
+### [Action Provider](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/ActionProvider.jsx)
+
+The actionprovider controls what kind of action that the chatbot is going to perform.
+
+The actionprovider is given the createChatBotMessage and createClientMessage functions in the constructor, which you can use to create a new responses.
+
+### [Widgets](https://github.com/kakadiyakeyur53/chatbot-using-react/tree/main/src/widgets)
+
+Widgets are custom components that you can render with chatbot messages.
+
+In order to use widgets, you need to register them in the config. Here you will define the following properties:
+
+widgetName - defines the name of the widget
+
+widgetFunc - define a function that returns the component. The function must take props and spread it into the component.
+
+mapStateToProps - defines which state properties you defined in config should be injected into the widget component.
+
+props - option array of props you want to pass to your component.
+
+When the widget component is rendered it will receive the following props:
+
+actionProvider - the actionprovider class you have defined, so you can trigger other actions from your custom components.
+
+setState - setState function that can manipulate the top level chatbot state.
+
+scrollIntoView - helper function to scroll content into view when doing asynchronous calls, use in combination with useEffect when updating to state to ensure that the chat window is scrolled to bottom.
+
+[state] - any piece of state you defined in the mapStateToProps section of the config.
+
+[props] - any piece of props you defined in the props section of the config.
+
+## Example
+
+here i create different widget to give overview of different properties of chatbot.
+### 1. Simple Message
+
+return simple chatbot message with text.
+
+### 2. [Enrollment No Wedget](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/widgets/EnrollmentNo.jsx)
+
+in this widget give simple overview of propery and use form for user input
+
+this return specific message on button click event
+
+### 3. [Web Development](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/widgets/WebDevelopment.jsx)
+
+simple use of state data passed in props by config section
+
+### 4. [Software Development](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/widgets/SoftwareDevelopment.jsx)
+
+simple use of data passed by backend or by array in widget itself.
+
+### 5. [Tools](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/widgets/Tools.jsx)
+
+use of action provider passing to widget by props
+
+display buttons, on click use property action provider which is given to widget by props
+
+### 6. [WeatherInfo](https://github.com/kakadiyakeyur53/chatbot-using-react/blob/main/src/widgets/WeatherInfo.jsx)
+
+use of API
+
+fetch data using API and use in widget, live display by statechange
+
